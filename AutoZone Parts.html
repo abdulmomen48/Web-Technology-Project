@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoZone Parts</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="AutoZone Parts.css">
+</head>
+
+<body>
+  <header>
+    <h1>AutoZone Parts</h1>
+    <input class="search-bar" type="text" placeholder="Search for car parts by name, model, or category..." />
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Automotives</a>
+    <a href="#">Engine</a>
+    <a href="#">Brake Systems</a>
+    <a href="#">Coolants</a>
+    <a href="#">Car Batteries</a>
+    <a href="#">Filters</a>
+    <a href="#">Wheel-1</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>AUTOZONE PARTS</h2>
+      <p>PREMIUM QUALITY CAR PARTS FOR ALL MODELS</p>
+      <p>Explore a wide range of genuine auto parts to keep your vehicle running smoothly. Shop from trusted brands at unbeatable prices.</p>
+      <button class="shop-button">SHOP NOW</button>
+    </div>
+    <img src="https://images.pexels.com/photos/2470657/pexels-photo-2470657.jpeg" alt="Black Car">
+  </section>
+
+  <section class="products">
+    <div class="product">
+      <img src="https://5.imimg.com/data5/SELLER/Default/2023/2/SM/DW/DE/1963500/12-v-amaron-battery.jpg" alt="Battery">
+      <h3>Amaron Car Battery</h3>
+      <p class="price">BDT 16,220</p>
+      <button class="add-to-cart">ADD TO CART</button>
+    </div>
+    <div class="product">
+      <img src="https://media.istockphoto.com/id/136398212/photo/set-of-brake-pads.jpg?s=612x612&w=0&k=20&c=XSXx8_wwCKl-GL5mJR2lHNzJLvSTeRZIk-35beziBqo=" alt="Brake Pads">
+      <h3>Ceramic Brake Pads</h3>
+      <p class="price">BDT 3,990</p>
+      <button class="add-to-cart">ADD TO CART</button>
+    </div>
+    <div class="product">
+      <img src="https://media.istockphoto.com/id/1326614900/photo/after-changing-the-oil-pour-in-the-fresh-engine-oil.jpg?s=612x612&w=0&k=20&c=9ZH9Y0d5M9-oP6R7D0ThaExHYzrlpbFL1qxVw5UVR6w=" alt="Synthetic Oil">
+      <h3>Fuel Oluc Fully Synthetic Oil</h3>
+      <p class="price">BDT 3,390</p>
+      <button class="add-to-cart">ADD TO CART</button>
+    </div>
+    <div class="product">
+      <img src="https://www.shutterstock.com/image-photo/wheel-alloy-wheels-rim-mag-600nw-1875750850.jpg" alt="Alloy Wheel">
+      <h3>Alloy Wheel (17")</h3>
+      <p class="price">BDT 15,400</p>
+      <button class="add-to-cart">ADD TO CART</button>
+    </div>
+    <div class="product">
+      <img src="https://i5.walmartimages.com/asr/580516dc-ba55-43bc-abd6-bd5264334ea2.6a44adce751f2f758ad10b776010bd53.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF" alt="Spark Plug">
+      <h3>Bosch Platinum Spark Plug</h3>
+      <p class="price">BDT 680</p>
+      <button class="add-to-cart">ADD TO CART</button>
+    </div>
+    <div class="product">
+      <img src="https://t4.ftcdn.net/jpg/02/20/95/45/240_F_220954530_SswkhRKNK41XZGIQfoACjEHaq82hSQmk.jpg" alt="Tool Box">
+      <h3>Heavy-Duty Tool Box</h3>
+      <p class="price">BDT 4,500</p>
+      <button class="view-details">VIEW DETAILS</button>
+    </div>
+  </section>
+</body>
+
+</html>
