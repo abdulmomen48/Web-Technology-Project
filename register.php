@@ -1,9 +1,8 @@
-
 <?php
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "scrapbhai";
+$dbname = "autozoneparts"; 
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
@@ -89,7 +88,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $stmt->bind_param("ssss", $name, $email, $phone, $hashedPass);
 
             if ($stmt->execute()) {
-                $successMsg = "Registration successful!";
+                $successMsg = "Welcome to AutoZone Parts! Your account has been created.";
                 $name = $email = $phone = "";
             } else {
                 $successMsg = "Error: " . $conn->error;
@@ -105,37 +104,37 @@ function errorClass($error) {
     return $error ? "input-error" : "";
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" >
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Register - Scrap Bhai</title>
+<title>Register - AutoZone Parts</title>
 <style>
   body {
     font-family: Arial, sans-serif;
-    background: #f4f7f8;
+    background: #f1f1f1;
     padding: 30px;
   }
   .register-section {
     background: #fff;
-    max-width: 400px;
+    max-width: 420px;
     margin: 0 auto;
     padding: 30px 40px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    border-top: 6px solid #e31837; /* AutoZone Red */
   }
   .register-section h2 {
     text-align: center;
     margin-bottom: 25px;
-    color: #333;
+    color: #e31837;
   }
   label {
     display: block;
     margin-top: 15px;
     font-weight: bold;
-    color: #555;
+    color: #333;
   }
   input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
     width: 100%;
@@ -148,7 +147,7 @@ function errorClass($error) {
     transition: border-color 0.3s ease;
   }
   input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="password"]:focus {
-    border-color: #007BFF;
+    border-color: #e31837;
     outline: none;
   }
   .input-error {
@@ -162,7 +161,7 @@ function errorClass($error) {
   button {
     width: 100%;
     padding: 12px;
-    background: #007BFF;
+    background: #e31837;
     color: white;
     font-size: 16px;
     border: none;
@@ -172,7 +171,7 @@ function errorClass($error) {
     transition: background 0.3s ease;
   }
   button:hover {
-    background: #0056b3;
+    background: #b31229;
   }
   .success-message {
     background-color: #d4edda;
@@ -189,7 +188,7 @@ function errorClass($error) {
     font-size: 14px;
   }
   p.login-link a {
-    color: #007BFF;
+    color: #e31837;
     text-decoration: none;
   }
   p.login-link a:hover {
@@ -200,7 +199,7 @@ function errorClass($error) {
 <body>
 
 <section class="register-section">
-  <h2>Create Your Account</h2>
+  <h2>Create Your AutoZone Account</h2>
 
   <?php if($successMsg): ?>
     <div class="success-message"><?php echo $successMsg; ?></div>
@@ -243,4 +242,3 @@ function errorClass($error) {
 
 </body>
 </html>
-
